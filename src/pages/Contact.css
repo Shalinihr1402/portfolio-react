@@ -1,0 +1,76 @@
+.contact {
+  min-height: 80vh;
+  padding: 80px 60px;
+  background: linear-gradient(120deg, #120ab9, #3e38dc);
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+.contact h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  animation: fadeDown 1s ease forwards;
+}
+
+/* CARD */
+.contact-card {
+  max-width: 500px;
+  margin: auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  animation: fadeUp 1.2s ease forwards;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 16px 0;
+  letter-spacing: 0.5px;
+}
+
+.contact-card strong {
+  color: #ffdd57;
+}
+
+/* HOVER EFFECT */
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  transition: all 0.4s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact h1 {
+    font-size: 36px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+}

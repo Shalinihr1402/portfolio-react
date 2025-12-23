@@ -1,0 +1,100 @@
+.internship {
+  min-height: 100vh;
+  padding: 80px 60px;
+  background: linear-gradient(120deg, #6c63ff, #8f8bff);
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+.internship h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  animation: fadeDown 1s ease forwards;
+}
+
+/* GRID */
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* INTERNSHIP & CERTIFICATE CARDS */
+.internship-card,
+.certificate-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 18px;
+  text-align: left;
+  animation: fadeUp 1.2s ease forwards;
+  transition: all 0.4s ease;
+}
+
+.internship-card h3,
+.certificate-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffdd57;
+  margin-bottom: 12px;
+}
+
+/* LIST */
+.internship-card ul {
+  padding-left: 18px;
+}
+
+.internship-card li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* HOVER EFFECT */
+.internship-card:hover,
+.certificate-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .internship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .internship h1 {
+    font-size: 36px;
+  }
+}

@@ -1,87 +1,68 @@
 .footer {
-  background: linear-gradient(135deg, #1f1c3a, #2e2a6a);
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.75rem;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.14);
   color: white;
-  padding: 50px 20px;
   text-align: center;
+  box-shadow: 0 22px 45px rgba(2, 6, 23, 0.28);
+}
+
+.footer-kicker {
+  margin: 0;
+  color: #7dd3fc;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
 }
 
 .footer h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  animation: fadeDown 1s ease forwards;
+  margin: 0.55rem 0 0;
+  font-size: 2rem;
 }
 
-/* SOCIAL ICON CONTAINER */
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 25px;
+  gap: 0.8rem;
+  margin: 1.5rem 0 1rem;
+  flex-wrap: wrap;
 }
 
-/* ICON STYLE */
 .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.85rem 1.1rem;
+  border-radius: 999px;
+  display: inline-flex;
   font-weight: 700;
   text-decoration: none;
-  color: white;
-  transition: all 0.3s ease;
-  animation: fadeUp 1.2s ease forwards;
+  color: #ecf5ff;
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-/* PLATFORM COLORS */
-.linkedin {
-  background: #0077b5;
-}
-
-.instagram {
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-}
-
-.naukri {
-  background: #1a237e;
-}
-
-.github {
-  background: #24292e;
-}
-
-/* HOVER EFFECT */
 .icon:hover {
-  transform: translateY(-6px) scale(1.1);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+  border-color: rgba(125, 211, 252, 0.3);
 }
 
-/* FOOTER TEXT */
 .footer-text {
-  font-size: 14px;
-  opacity: 0.85;
+  max-width: 42rem;
+  margin: 0.9rem auto 0;
+  color: #a8b9cd;
+  line-height: 1.7;
 }
 
-/* ANIMATIONS */
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.footer-note {
+  margin: 0;
+  color: #7f94af;
+  font-size: 0.92rem;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 768px) {
+  .footer {
+    width: min(100% - 1.25rem, 1160px);
   }
 }

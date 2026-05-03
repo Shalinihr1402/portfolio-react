@@ -1,17 +1,44 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
-export default function Navbar() {
-    return(
-        <nav className="navbar">
-            <h1 className="logo">SHALINI H R</h1>
-            <div className="nav-links">
-                <Link to="/">Home</Link>
-                <Link to="/skills">Skills</Link>
-                 <Link to="/internships">Internships</Link>
 
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </div>
-        </nav>
-    );
+const navItems = [
+  { to: "/", label: "Home" },
+  { to: "/skills", label: "Skills" },
+  { to: "/internships", label: "Experience" },
+  { to: "/projects", label: "Projects" },
+  { to: "/contact", label: "Contact" },
+];
+
+export default function Navbar() {
+  return (
+    <header className="site-header">
+      <nav className="navbar">
+        <NavLink to="/" className="brand" aria-label="Shalini H R portfolio">
+          <span className="brand-mark">SH</span>
+          <span className="brand-copy">
+            <strong>Shalini H R</strong>
+            <small>Developer Portfolio</small>
+          </span>
+        </NavLink>
+
+        <div className="nav-links">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
+
+        <NavLink to="/contact" className="nav-cta">
+          Let&apos;s talk
+        </NavLink>
+      </nav>
+    </header>
+  );
 }

@@ -1,76 +1,55 @@
-.contact {
-  min-height: 80vh;
-  padding: 80px 60px;
-  background: linear-gradient(120deg, #120ab9, #3e38dc);
-  color: white;
-  text-align: center;
+.contact-page {
+  display: grid;
+  gap: 2rem;
 }
 
-/* TITLE */
-.contact h1 {
-  font-size: 48px;
-  margin-bottom: 40px;
-  animation: fadeDown 1s ease forwards;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
-/* CARD */
 .contact-card {
-  max-width: 500px;
-  margin: auto;
-  padding: 35px;
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(12px);
-  border-radius: 18px;
-  animation: fadeUp 1.2s ease forwards;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  padding: 1.7rem;
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(34, 197, 94, 0.12), rgba(15, 23, 42, 0.78)),
+    rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 22px 45px rgba(2, 6, 23, 0.28);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-.contact-card p {
-  font-size: 18px;
-  margin: 16px 0;
-  letter-spacing: 0.5px;
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(74, 222, 128, 0.24);
 }
 
 .contact-card strong {
-  color: #ffdd57;
+  color: #86efac;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-/* HOVER EFFECT */
-.contact-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  transition: all 0.4s ease;
+.contact-card a {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: #f8fbff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5;
 }
 
-/* ANIMATIONS */
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.contact-card p {
+  margin: 0.95rem 0 0;
+  color: #a8b9cd;
+  line-height: 1.75;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .contact h1 {
-    font-size: 36px;
-  }
-
-  .contact-card {
-    padding: 25px;
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }

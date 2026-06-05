@@ -1,5 +1,5 @@
 Place presentation photos in this folder with these filenames:
 
-gmu-voice-assistant-team.jpg
-sih-team-presentation.jpg
-academic-topic-presentation.jpg
+gmu-voice-assistant-team.jpeg
+sih-team-presentation.jpeg
+academic-topic-presentation.jpeg

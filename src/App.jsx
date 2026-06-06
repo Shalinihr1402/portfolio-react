@@ -328,12 +328,15 @@ function App() {
             title="I build practical software that connects APIs, databases, AI, and product interfaces."
             text="I enjoy building backend systems, AI-powered applications, and practical full stack solutions that solve real-world problems. My work combines APIs, databases, automation, and modern web technologies to create scalable and user-focused software."
           />
+          <p className="about-extra">
+            My interests include backend systems, AI integrations, REST APIs, database design, and scalable web applications.
+          </p>
         </section>
 
         <section id="projects" className="content-section project-focus-section">
           <SectionHeader
             eyebrow="Featured Projects"
-            title="Project-first portfolio with clear engineering impact."
+            title="Project-focused portfolio with real application impact."
             text="The first 10 seconds should show what I build, how I think, and which technologies I can work with."
           />
 
@@ -382,7 +385,7 @@ function App() {
         </section>
 
         <section id="skills" className="content-section">
-          <SectionHeader eyebrow="Skills" title="Core skills grouped by engineering responsibility." />
+          <SectionHeader eyebrow="Skills" title="Core skills grouped by development area." />
           <div className="skills-grid-clean">
             {skills.map((group, index) => {
               const Icon = group.icon;

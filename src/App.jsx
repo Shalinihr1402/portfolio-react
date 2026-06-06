@@ -223,6 +223,7 @@ function ImageWithFallback({ src, alt, fallbackTitle = "Project dashboard mockup
         src={src}
         alt={alt}
         loading="lazy"
+        decoding="async"
         onError={(event) => {
           event.currentTarget.style.display = "none";
           event.currentTarget.parentElement.classList.add("image-missing");
@@ -252,7 +253,7 @@ function App() {
           <span>SH</span>
           <strong>Shalini H R</strong>
         </a>
-        <nav>
+        <nav aria-label="Primary navigation">
           {navItems.map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`}>
               {item}
@@ -295,7 +296,13 @@ function App() {
             </div>
 
             <aside className="profile-panel">
-              <img src={profilePhoto} alt="Shalini H R" />
+              <img
+                src={profilePhoto}
+                alt="Shalini H R, MCA Graduate and Full Stack Developer"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+              />
               <div>
                 <span>Developer identity</span>
                 <h2>Software Engineer / Full Stack Developer</h2>
@@ -371,10 +378,15 @@ function App() {
                     ))}
                   </div>
                   <div className="project-actions">
-                    <a href="https://github.com/Shalinihr1402" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/Shalinihr1402"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open GitHub profile for ${project.title}`}
+                    >
                       <FaGithub /> GitHub
                     </a>
-                    <a href="#contact">
+                    <a href="#contact" aria-label={`Contact Shalini for ${project.title} demo`}>
                       <FiExternalLink /> Demo
                     </a>
                   </div>
@@ -456,6 +468,7 @@ function App() {
                 type="button"
                 key={certificate.title}
                 className="certificate-card"
+                aria-label={`Preview ${certificate.title} certificate from ${certificate.organization}`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -494,7 +507,12 @@ function App() {
                   <span key={metric}>{metric}</span>
                 ))}
               </div>
-              <a href="https://github.com/Shalinihr1402" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Shalinihr1402"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Shalini H R GitHub profile"
+              >
                 Open GitHub <FiArrowUpRight />
               </a>
             </div>
@@ -539,6 +557,7 @@ function App() {
                   target={link.href.startsWith("http") ? "_blank" : undefined}
                   rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                   className="contact-card"
+                  aria-label={`Contact through ${link.label}: ${link.value}`}
                 >
                   <Icon />
                   <span>{link.label}</span>
@@ -553,13 +572,13 @@ function App() {
       <footer className="footer-shell">
         <p>Shalini H R. Software Engineer / Full Stack Developer.</p>
         <div>
-          <a href="https://github.com/Shalinihr1402" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Shalinihr1402" target="_blank" rel="noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/shalini-h-r-90862a251?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/shalini-h-r-90862a251?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="#home" className="scroll-top">Top</a>
+          <a href="#home" className="scroll-top" aria-label="Scroll to top">Top</a>
         </div>
       </footer>
 
@@ -571,7 +590,7 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
             onClick={(event) => event.stopPropagation()}
           >
-            <button type="button" onClick={() => setPreviewCertificate(null)}>Close</button>
+            <button type="button" onClick={() => setPreviewCertificate(null)} aria-label="Close certificate preview">Close</button>
             <img src={previewCertificate.image} alt={`${previewCertificate.title} certificate preview`} />
             <div>
               <span>{previewCertificate.organization}</span>

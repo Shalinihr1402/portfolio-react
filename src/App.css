@@ -71,11 +71,18 @@
   color: #9ca3af;
   font-size: 0.88rem;
   transition: 180ms ease;
+  white-space: nowrap;
 }
 
 .top-nav nav a:hover {
   color: #f9fafb;
   background: rgba(249, 250, 251, 0.08);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(129, 140, 248, 0.9);
+  outline-offset: 4px;
 }
 
 .hero-section {
@@ -170,6 +177,7 @@
 .secondary-button,
 .project-actions a,
 .github-compact a {
+  min-height: 2.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -340,6 +348,7 @@
   height: 100%;
   padding: 0.85rem;
   object-fit: contain;
+  object-position: center;
 }
 
 .image-placeholder {
@@ -387,6 +396,7 @@
 }
 
 .project-body {
+  min-width: 0;
   padding: 1.25rem;
 }
 
@@ -418,6 +428,7 @@
   border: 1px solid rgba(129, 140, 248, 0.16);
   font-size: 0.82rem;
   font-style: normal;
+  overflow-wrap: anywhere;
 }
 
 .project-actions {
@@ -501,6 +512,10 @@
   border-radius: 1.45rem;
 }
 
+.github-compact > * {
+  min-width: 0;
+}
+
 .github-compact > div:first-child {
   padding: 1rem;
   border-radius: 1rem;
@@ -564,6 +579,8 @@
   grid-template-columns: repeat(14, 1fr);
   gap: 0.35rem;
   align-self: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .heat {
@@ -600,6 +617,7 @@
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
   cursor: pointer;
   transition: 180ms ease;
+  min-width: 0;
 }
 
 .certificate-card:hover {
@@ -655,6 +673,7 @@
   padding: 1.15rem;
   border-radius: 1.25rem;
   transition: 180ms ease;
+  min-width: 0;
 }
 
 .contact-card svg {
@@ -773,20 +792,23 @@
   .hero-grid,
   .hero-project-card,
   .project-showcase,
-  .skills-grid-clean,
-  .certificate-grid,
   .github-compact,
-  .professional-highlights,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-grid-clean,
+  .certificate-grid,
+  .professional-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-project-card {
     grid-column: auto;
   }
 
-  .professional-highlights {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .hero-project-card .image-slot {
+    min-height: 26rem;
   }
 }
 
@@ -803,11 +825,12 @@
   }
 
   .hero-section {
-    padding-top: 2rem;
+    padding-top: 1.4rem;
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.25rem, 12vw, 3.35rem);
+    font-size: clamp(1.95rem, 10.5vw, 2.85rem);
+    line-height: 1.06;
   }
 
   .hero-actions,
@@ -817,7 +840,9 @@
   }
 
   .primary-button,
-  .secondary-button {
+  .secondary-button,
+  .project-actions a,
+  .github-compact a {
     width: 100%;
   }
 
@@ -826,23 +851,157 @@
   }
 
   .content-section {
-    padding: 2.15rem 0;
+    padding: 1.9rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.55rem, 8vw, 2.2rem);
+    line-height: 1.08;
+  }
+
+  .hero-copy,
+  .profile-panel,
+  .project-body,
+  .skill-panel,
+  .github-compact,
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .hero-badges,
+  .profile-badges,
+  .tech-row,
+  .skill-panel div:last-child,
+  .github-metrics {
+    gap: 0.42rem;
+  }
+
+  .hero-badges span,
+  .profile-badges em,
+  .tech-row em,
+  .skill-panel span,
+  .github-metrics span {
+    font-size: 0.74rem;
+    padding: 0.4rem 0.52rem;
   }
 
   .hero-project-card .image-slot,
   .image-slot {
-    min-height: 18rem;
+    min-height: 16.5rem;
+  }
+
+  .project-body h3 {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+  }
+
+  .project-actions {
+    flex-direction: column;
   }
 
   .achievement-timeline article {
     grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 0.95rem;
+  }
+
+  .achievement-timeline article > span {
+    width: fit-content;
+    padding: 0.35rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.12);
+  }
+
+  .skills-grid-clean,
+  .certificate-grid,
+  .professional-highlights,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card .image-slot {
+    min-height: 14.5rem;
+  }
+
+  .github-compact {
+    padding: 0.85rem;
   }
 
   .contribution-map {
     grid-template-columns: repeat(7, 1fr);
+    gap: 0.28rem;
   }
 
   .professional-highlights {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 414px) {
+  .top-nav,
+  .hero-section,
+  .content-section,
+  .footer-shell {
+    width: min(100% - 0.85rem, 1180px);
+  }
+
+  .top-nav {
+    gap: 0.65rem;
+    padding: 0.75rem 0;
+  }
+
+  .top-nav nav a {
+    padding: 0.55rem 0.66rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(1.82rem, 10vw, 2.45rem);
+  }
+
+  .hero-copy p,
+  .section-header p,
+  .about-extra,
+  .project-body p,
+  .achievement-timeline p,
+  .github-compact p {
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  .profile-panel img {
+    aspect-ratio: 4 / 3.2;
+  }
+
+  .profile-panel h2 {
+    font-size: clamp(1.42rem, 7vw, 1.9rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-copy h1 {
+    font-size: 1.72rem;
+  }
+
+  .hero-copy,
+  .profile-panel,
+  .project-body,
+  .skill-panel,
+  .achievement-timeline article,
+  .github-compact,
+  .contact-card {
+    border-radius: 1.05rem;
+  }
+
+  .hero-project-card .image-slot,
+  .image-slot {
+    min-height: 14.75rem;
+  }
+
+  .certificate-card .image-slot {
+    min-height: 13rem;
   }
 }

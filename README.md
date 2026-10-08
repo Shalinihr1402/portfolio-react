@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🚀 Shalini H R — Modern Creative Developer Portfolio ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Full Stack Developer & AI Enthusiast | MCA Graduate**  
+> Building delightful, high-impact web apps, intelligent AI voice systems, and robust backend architectures with a playful, creative touch! 🎨💻
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-19.2.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.0.16-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 Welcome to My Digital Universe!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Hey there! 👋 I'm **Shalini H R**, a passionate **Full Stack Developer** and **MCA Graduate** based in Karnataka, India. I specialize in building reactive user experiences, enterprise-grade backend APIs, and cutting-edge AI integrations (Voice Assistants, Vision AI, ML Risk Prediction).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio showcases my journey, featured software engineering projects, technical skill set, certifications, and GitHub experiments with a vibrant, playful, cartoon-inspired modern design aesthetic! 🎈
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Design Philosophy & Features
 
-### `npm run build`
+- 🌈 **Vibrant Cartoon & Neo-Modern Aesthetic**: Playful stickers, bouncy rounded cards, vibrant gradients, and charming emojis that make an unforgettable impression on recruiters and visitors.
+- ⚡ **Ultra-Fast Performance**: Built on **Vite 8** and **React 19** for blazing-fast page loads and instant transitions.
+- 🪄 **Fluid Micro-Interactions**: Powered by **Framer Motion** with spring physics, floating tags, hover elevation, and interactive modals.
+- 📱 **Fully Responsive**: Tailored for pixel-perfect presentation across mobile, tablet, and widescreen monitors.
+- 🛡️ **Defensive UI**: Built-in fallback cards and gracefully degrading media slots so content is always readable.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Featured Projects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Project | Tech Stack | Highlights |
+| :--- | :--- | :--- |
+| **🎙️ GMU VoiceBot Assistant** | React, PHP, MySQL, OpenAI, Deepgram, Vapi | Multilingual university assistant supporting campus ERP workflows, voice navigation, student inquiries, and real-time speech AI. |
+| **🏔️ AI Rockfall Hazard Predictor** | Python, Scikit-Learn, Pandas, NumPy, React | Machine learning system predicting geological risk factors using terrain features and predictive analytics. |
+| **👁️ Vision & Voice AI Accessibility** | React, OpenAI GPT-4o, Web Audio, Vision Models | Real-time scene understanding and natural voice guidance assistant designed for visually impaired users. |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack & Toolbox
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend Magic 🎨**: React 19, JavaScript (ES6+), Tailwind CSS, Framer Motion, HTML5/CSS3, Responsive UI
+- **Backend & APIs ⚙️**: Java, Spring Boot, PHP, Python, Node.js, RESTful APIs, MVC Architecture
+- **Databases 🗄️**: MySQL, MongoDB, Relational Schema Design, Query Optimization
+- **AI & Emerging Tech 🤖**: OpenAI GPT-4o APIs, Deepgram Speech-to-Text, Vapi Voice Orchestration, RAG Concepts
+- **Tools & Workflow 🛠️**: Git, GitHub, Vite, Postman, VS Code, Figma
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💻 Local Development Setup
 
-## Learn More
+To run this portfolio locally on your machine:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the repository
+```bash
+git clone https://github.com/Shalinihr1402/portfolio-react.git
+cd portfolio-react
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Install dependencies
+```bash
+npm install
+```
 
-### Code Splitting
+### 3. Start the Vite development server
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser to explore the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Build for production
+```bash
+npm run build
+```
+The optimized production bundle will be output to the `dist/` folder.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📬 Let's Connect!
 
-### Making a Progressive Web App
+I am actively seeking **Full Stack Developer**, **Backend Engineer**, and **Frontend / UI Engineer** opportunities!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 📧 **Email**: [shalinidvg16@gmail.com](mailto:shalinidvg16@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/shalini-h-r-90862a251](https://www.linkedin.com/in/shalini-h-r-90862a251)
+- 🐙 **GitHub**: [@Shalinihr1402](https://github.com/Shalinihr1402)
+- 📱 **Phone**: +91 7411156526
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  Crafted with 💖, React, and lots of curiosity by <strong>Shalini H R</strong> © 2026
+</p>

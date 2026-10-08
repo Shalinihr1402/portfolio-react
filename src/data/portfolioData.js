@@ -53,11 +53,12 @@ export const personalInfo = {
 };
 
 export const heroTags = [
-  { emoji: "🚀", text: "React Developer", color: "from-pink-500 to-rose-500" },
-  { emoji: "✨", text: "UI/UX Enthusiast", color: "from-amber-400 to-orange-500" },
-  { emoji: "💻", text: "Problem Solver", color: "from-blue-500 to-cyan-500" },
-  { emoji: "🤖", text: "AI & Voice Integrator", color: "from-purple-500 to-indigo-500" },
-  { emoji: "⚡", text: "Backend Architecture", color: "from-emerald-400 to-teal-500" },
+  { emoji: "✨", text: "Vibe Coder", color: "from-pink-500 to-rose-500" },
+  { emoji: "🐙", text: "Open Source Contributor", color: "from-blue-500 to-cyan-500" },
+  { emoji: "🤖", text: "AI / ML Projects", color: "from-purple-500 to-indigo-500" },
+  { emoji: "🚀", text: "React Developer", color: "from-amber-400 to-orange-500" },
+  { emoji: "⚡", text: "Full Stack Explorer", color: "from-emerald-400 to-teal-500" },
+  { emoji: "💻", text: "Problem Solver", color: "from-indigo-400 to-purple-600" },
 ];
 
 export const developerDna = [

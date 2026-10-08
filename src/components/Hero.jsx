@@ -128,50 +128,95 @@ export default function Hero() {
               />
             </div>
 
-            {/* Floating Sticker: MCA Graduate */}
+            {/* Floating Glass Bubble 1: MCA Graduate (Top-Left) */}
             <motion.div
-              className="floating-sticker sticker-top-left"
-              animate={{ y: [0, -8, 0] }}
-              transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
+              className="glass-bubble bubble-purple bubble-top-left"
+              animate={{ y: [0, -9, 0] }}
+              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              whileHover={{ scale: 1.06, y: -4 }}
             >
-              <span className="sticker-icon">🎓</span>
-              <div>
+              <div className="bubble-icon-orb">🎓</div>
+              <div className="bubble-text-group">
                 <strong>MCA Graduate</strong>
                 <small>Class of 2026</small>
               </div>
             </motion.div>
 
-            {/* Floating Sticker: AI Voice Integrator */}
+            {/* Floating Glass Bubble 2: Vibe Coder (Top-Right) */}
             <motion.div
-              className="floating-sticker sticker-bottom-right"
-              animate={{ y: [0, 8, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
+              className="glass-bubble bubble-pink bubble-top-right"
+              animate={{ y: [0, 9, 0] }}
+              transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.3 }}
+              whileHover={{ scale: 1.06, y: -4 }}
             >
-              <span className="sticker-icon">🤖</span>
-              <div>
-                <strong>AI Voice Apps</strong>
-                <small>OpenAI + Vapi</small>
+              <div className="bubble-icon-orb">✨</div>
+              <div className="bubble-text-group">
+                <strong>Vibe Coder</strong>
+                <small>Creative & Fast</small>
               </div>
             </motion.div>
 
-            {/* Floating Sticker: Code Passion */}
+            {/* Floating Glass Bubble 3: Open Source Contributor (Bottom-Left) */}
             <motion.div
-              className="floating-sticker sticker-bottom-left"
-              animate={{ y: [0, -6, 0] }}
-              transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1 }}
+              className="glass-bubble bubble-cyan bubble-bottom-left"
+              animate={{ y: [0, -7, 0] }}
+              transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 0.8 }}
+              whileHover={{ scale: 1.06, y: -4 }}
             >
-              <span className="sticker-icon">💖</span>
-              <div>
-                <strong>Clean Code</strong>
-                <small>React & Java</small>
+              <div className="bubble-icon-orb">🐙</div>
+              <div className="bubble-text-group">
+                <strong>Open Source</strong>
+                <small>Active Contributor</small>
+              </div>
+            </motion.div>
+
+            {/* Floating Glass Bubble 4: AI / ML Projects (Bottom-Right) */}
+            <motion.div
+              className="glass-bubble bubble-indigo bubble-bottom-right"
+              animate={{ y: [0, 8, 0] }}
+              transition={{ repeat: Infinity, duration: 3.8, ease: "easeInOut", delay: 1.2 }}
+              whileHover={{ scale: 1.06, y: -4 }}
+            >
+              <div className="bubble-icon-orb">🤖</div>
+              <div className="bubble-text-group">
+                <strong>AI / ML Projects</strong>
+                <small>Voice & Vision AI</small>
               </div>
             </motion.div>
           </div>
 
-          {/* Quick Summary Pill under Avatar */}
+          {/* Attractive Theme-Matching Bubble Tags Bar */}
           <div className="avatar-identity-bar">
-            <span className="badge-identity">⚡ Full Stack Explorer</span>
-            <span className="badge-identity">🎨 Modern UI Enthusiast</span>
+            <motion.span
+              className="bubble-pill bubble-pill-pink"
+              whileHover={{ scale: 1.08, y: -3 }}
+            >
+              <span className="bubble-pill-emoji">✨</span> Vibe Coder
+            </motion.span>
+            <motion.span
+              className="bubble-pill bubble-pill-cyan"
+              whileHover={{ scale: 1.08, y: -3 }}
+            >
+              <span className="bubble-pill-emoji">🐙</span> Open Source Contributor
+            </motion.span>
+            <motion.span
+              className="bubble-pill bubble-pill-purple"
+              whileHover={{ scale: 1.08, y: -3 }}
+            >
+              <span className="bubble-pill-emoji">🤖</span> AI / ML Projects
+            </motion.span>
+            <motion.span
+              className="bubble-pill bubble-pill-amber"
+              whileHover={{ scale: 1.08, y: -3 }}
+            >
+              <span className="bubble-pill-emoji">⚡</span> Full Stack Explorer
+            </motion.span>
+            <motion.span
+              className="bubble-pill bubble-pill-emerald"
+              whileHover={{ scale: 1.08, y: -3 }}
+            >
+              <span className="bubble-pill-emoji">🎨</span> Modern UI Enthusiast
+            </motion.span>
           </div>
         </motion.div>
       </div>

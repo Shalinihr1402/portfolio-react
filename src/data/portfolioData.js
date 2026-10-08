@@ -23,6 +23,8 @@ import {
   SiTailwindcss,
   SiPostman,
   SiFigma,
+  SiPostgresql,
+  SiAnthropic,
 } from "react-icons/si";
 import {
   FiArrowUpRight,
@@ -120,10 +122,11 @@ export const skillCategories = [
     emoji: "🗄️",
     color: "#10b981",
     skills: [
+      { name: "PostgreSQL", icon: SiPostgresql, level: "Advanced", badge: "SQL Database" },
       { name: "MySQL", icon: SiMysql, level: "Advanced", badge: "RDBMS" },
       { name: "MongoDB", icon: SiMongodb, level: "Intermediate", badge: "NoSQL" },
-      { name: "Database Schema Design", icon: FaDatabase, level: "Proficient", badge: "Modeling" },
-      { name: "CRUD & Query Tuning", icon: FaDatabase, level: "Advanced", badge: "Performance" },
+      { name: "Schema Design", icon: FaDatabase, level: "Proficient", badge: "Data Modeling" },
+      { name: "Query Tuning", icon: FaDatabase, level: "Advanced", badge: "Optimization" },
     ],
   },
   {
@@ -131,9 +134,11 @@ export const skillCategories = [
     emoji: "🤖",
     color: "#8b5cf6",
     skills: [
-      { name: "OpenAI GPT-4", icon: SiOpenai, level: "Proficient", badge: "LLM Integration" },
+      { name: "Claude AI", icon: SiAnthropic, level: "Advanced", badge: "Anthropic LLM" },
+      { name: "OpenAI Codex", icon: SiOpenai, level: "Proficient", badge: "Code Models" },
+      { name: "OpenAI GPT-4", icon: SiOpenai, level: "Proficient", badge: "LLM Systems" },
       { name: "Deepgram Voice", icon: FiZap, level: "Proficient", badge: "Speech-to-Text" },
-      { name: "Vapi Voice Agent", icon: FiCpu, level: "Proficient", badge: "Voice AI" },
+      { name: "Vapi Voice AI", icon: FiCpu, level: "Proficient", badge: "Voice Agent" },
       { name: "Vision AI & ML", icon: FiZap, level: "Intermediate", badge: "Multimodal" },
     ],
   },
@@ -142,8 +147,7 @@ export const skillCategories = [
     emoji: "🛠️",
     color: "#f59e0b",
     skills: [
-      { name: "Git & Version Control", icon: SiGit, level: "Advanced", badge: "VCS" },
-      { name: "GitHub", icon: FaGithub, level: "Advanced", badge: "Collaboration" },
+      { name: "Git & GitHub", icon: FaGithub, level: "Advanced", badge: "VCS & PRs" },
       { name: "Vite Bundler", icon: FiZap, level: "Proficient", badge: "Build Tool" },
       { name: "Postman", icon: SiPostman, level: "Proficient", badge: "API Testing" },
       { name: "Figma UI", icon: SiFigma, level: "Intermediate", badge: "Design" },
@@ -225,17 +229,24 @@ export const featuredProjects = [
 
 export const githubStats = [
   {
+    emoji: "🔀",
+    metric: "33+",
+    title: "Git Merged PRs",
+    subtitle: "Pull requests merged & reviewed",
+    color: "from-cyan-500/20 to-blue-500/20 border-cyan-500/40 text-cyan-400",
+  },
+  {
     emoji: "🏆",
     metric: "15+",
-    title: "Projects & Prototypes",
-    subtitle: "Built across AI, Full Stack & Backend",
+    title: "Projects Built",
+    subtitle: "AI, Full Stack & Backend",
     color: "from-purple-500/20 to-indigo-500/20 border-purple-500/40 text-purple-400",
   },
   {
     emoji: "⭐",
     metric: "10+",
     title: "Active Repositories",
-    subtitle: "Public codebases & learning labs",
+    subtitle: "Public codebases & labs",
     color: "from-pink-500/20 to-rose-500/20 border-pink-500/40 text-pink-400",
   },
   {
@@ -249,29 +260,20 @@ export const githubStats = [
     emoji: "💡",
     metric: "150+",
     title: "Problems Solved",
-    subtitle: "Data structures, logic & algorithms",
+    subtitle: "Data structures & algorithms",
     color: "from-emerald-500/20 to-teal-500/20 border-emerald-500/40 text-emerald-400",
   },
 ];
 
 export const achievementCards = [
   {
-    emoji: "🏆",
-    title: "Smart India Hackathon (SIH)",
-    badge: "National Hackathon",
-    year: "2025",
-    desc: "Spearheaded team ideation, solution framing, and system architecture for high-impact civic problem solving.",
-    tags: ["Team Leadership", "Rapid Prototyping", "Pitch Presentation"],
+    emoji: "⚡",
+    title: "HackerRank SQL (Basic) Certification",
+    badge: "HackerRank Verified",
+    year: "2024",
+    desc: "Earned SQL Skill Certification demonstrating proficiency in relational queries, complex joins, filtering, and database logic.",
+    tags: ["SQL Certified", "HackerRank", "Database Logic"],
     image: "/presentation/sih-team-presentation.jpeg",
-  },
-  {
-    emoji: "🎓",
-    title: "Master of Computer Applications (MCA)",
-    badge: "Academic Degree",
-    year: "2024–2026",
-    desc: "Rigorous graduate coursework in Advanced Software Engineering, Distributed Systems, Database Architectures, and AI.",
-    tags: ["MCA Graduate", "Computer Science", "Honors Discipline"],
-    image: "/presentation/academic-topic-presentation.jpeg",
   },
   {
     emoji: "📜",
@@ -284,12 +286,30 @@ export const achievementCards = [
   },
   {
     emoji: "☁️",
-    title: "Cloud Computing & Technical Speaker",
+    title: "Cloud Computing Paper Presentation",
     badge: "Bapuji Institute (BIHE)",
     year: "2022",
-    desc: "Delivered seminar presentation on Cloud Computing paradigms, scalable virtualization, and serverless architectures.",
-    tags: ["Cloud Computing", "Public Speaking", "Tech Seminar"],
+    desc: "Presented seminar paper on Cloud Computing paradigms, scalable virtualization, and serverless architectures.",
+    tags: ["Cloud Computing", "Paper Presentation", "Tech Seminar"],
     image: "/certificates/certificate-2.jpeg",
+  },
+  {
+    emoji: "🏆",
+    title: "Smart India Hackathon (SIH)",
+    badge: "National Hackathon",
+    year: "2025",
+    desc: "Spearheaded team ideation, solution framing, and system architecture for high-impact civic problem solving.",
+    tags: ["Team Leadership", "Rapid Prototyping", "Pitch Presentation"],
+    image: null,
+  },
+  {
+    emoji: "🎓",
+    title: "Master of Computer Applications (MCA)",
+    badge: "Academic Degree",
+    year: "2024–2026",
+    desc: "Graduate coursework in Advanced Software Engineering, Distributed Systems, Database Architectures, and AI.",
+    tags: ["MCA Graduate", "Computer Science", "Honors Discipline"],
+    image: "/presentation/academic-topic-presentation.jpeg",
   },
 ];
 

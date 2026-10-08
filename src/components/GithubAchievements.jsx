@@ -109,10 +109,10 @@ export default function GithubAchievements() {
 
         {/* Highlight Bullets under Heatmap */}
         <div className="github-highlights-chips">
+          <span className="chip-badge">🔀 33+ Git Merged Pull Requests</span>
           <span className="chip-badge">⚡ React 19 & Vite Tooling</span>
-          <span className="chip-badge">🤖 OpenAI & Deepgram Pipelines</span>
-          <span className="chip-badge">🗄️ MySQL & Spring Boot APIs</span>
-          <span className="chip-badge">✨ Clean, Component-Driven Code</span>
+          <span className="chip-badge">🤖 Claude, Codex & OpenAI APIs</span>
+          <span className="chip-badge">🗄️ PostgreSQL & MySQL Databases</span>
         </div>
       </motion.div>
     </section>

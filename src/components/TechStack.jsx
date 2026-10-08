@@ -77,10 +77,7 @@ export default function TechStack() {
                     </div>
                     <div className="skill-info">
                       <span className="skill-name">{skill.name}</span>
-                      <div className="skill-meta">
-                        <span className="skill-badge-tag">{skill.badge}</span>
-                        <span className="skill-level">{skill.level}</span>
-                      </div>
+                      <span className="skill-badge-tag">{skill.badge}</span>
                     </div>
                   </motion.div>
                 );

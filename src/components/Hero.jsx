@@ -138,7 +138,6 @@ export default function Hero() {
               <div className="bubble-icon-orb">🎓</div>
               <div className="bubble-text-group">
                 <strong>MCA Graduate</strong>
-                <small>Class of 2026</small>
               </div>
             </motion.div>
 

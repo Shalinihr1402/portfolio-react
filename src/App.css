@@ -2636,13 +2636,43 @@
     font-size: 2.3rem;
   }
 
-  .sticker-top-left {
+  .bubble-top-left {
     left: -10px;
     top: -10px;
   }
 
-  .sticker-bottom-right {
+  .bubble-top-right {
     right: -10px;
+    top: 10px;
+  }
+
+  .bubble-bottom-left {
+    left: -10px;
+    bottom: -10px;
+  }
+
+  .bubble-bottom-right {
+    right: -10px;
+    bottom: 10px;
+  }
+
+  .glass-bubble {
+    padding: 0.38rem 0.75rem;
+    gap: 0.45rem;
+  }
+
+  .glass-bubble .bubble-icon-orb {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+
+  .glass-bubble strong {
+    font-size: 0.75rem;
+  }
+
+  .glass-bubble small {
+    font-size: 0.65rem;
   }
 
   .project-actions-footer {
@@ -2651,13 +2681,5 @@
 
   .modal-footer-actions {
     grid-template-columns: 1fr;
-  }
-
-  .floating-sticker {
-    padding: 0.5rem 0.8rem;
-  }
-
-  .floating-sticker strong {
-    font-size: 0.76rem;
   }
 }
